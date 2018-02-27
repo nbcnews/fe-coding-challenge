@@ -4,10 +4,12 @@ NBC News React Coding Challenge for Front End Developers
 ## Instructions
 You will be creating a custom dropdown component that selects content package types. Given this application framework, please complete the following [workflow](#workflow).
 
-###TODO A
+- [ ] **TODO A**
+
 The dropdown does not have any options loaded. Use the data array given in `DropdownControl.js` component state to render options values. Use the `label` parameter for user display and `name` for a unique value identifier.
 
-###TODO B
+- [ ] **TODO B**
+
 There should be two arrow buttons next to the dropdown that update the current value. The left arrow should move back which option is selected, and the right arrow should move it forward.
 
 ## Installation and Startup
@@ -16,7 +18,7 @@ This project is based off of [create-react-app](https://github.com/facebook/crea
 
 ```bash
 $ npm install
-$ npm start  # Start the development server
+$ npm start     # Start the development server
 ```
 
 ## Project Structure
@@ -39,7 +41,6 @@ $ npm start  # Start the development server
 ```
 
 ## Workflow
-
-<Image goes here>
+![Workflow](https://raw.githubusercontent.com/nbcnews/fe-coding-challenge/workflow.png)
 
 Please don't hesistate to ask if you have any questions. Good luck!
