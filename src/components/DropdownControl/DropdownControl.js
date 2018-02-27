@@ -26,16 +26,25 @@ class DropdownControl extends Component {
   // TODO A: add select options and handle selection
   dropdown = () => (
     <div className="dropdown position-relative">
-      <select />
+      <select>
+        {
+          this.state.options.map((option, index) => {
+            return (<option key={index} name={option.name} value={option.name}>{option.label}</option>);
+          })
+        }
+        <option>
+        </option>
+      </select>
       <div className="descend">
         <img className="icon" src={descendIcon} alt="" />
       </div>
     </div>
   );
 
+
   // TODO B: handle arrow clicks to navigate options
   arrow = icon => (
-    <button type="button" className="btn btn-light ml-2">
+    <button type="button" className="btn btn-light ml-2" onClick="">
       <img className="icon" src={icon} alt="" />
     </button>
   );
