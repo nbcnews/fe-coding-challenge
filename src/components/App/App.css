@@ -1,0 +1,85 @@
+/* Reset */
+body {
+  line-height: 1;
+}
+
+:focus,
+button:focus {
+  outline: none;
+}
+
+/* Button */
+button,
+.btn {
+  position: relative;
+  padding: 6px;
+  border-radius: 0;
+  line-height: 0;
+  background-color: #dedede;
+  border-color: #dedede;
+}
+
+button:not([disabled]):not(.disabled):hover,
+.btn:not([disabled]):not(.disabled):hover {
+  background-color: #cbcbcb;
+  border-color: #c5c5c5;
+}
+
+button:not([disabled]):not(.disabled)::after,
+.btn:not([disabled]):not(.disabled)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .04);
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+button:not([disabled]):not(.disabled):active,
+.btn:not([disabled]):not(.disabled):active {
+  background-color: #c5c5c5;
+  border-color: #c5c5c5;
+  box-shadow: none;
+}
+
+/* Select */
+select {
+  border: 1px solid #b2b2b2;
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  background-color: white;
+  border-radius: 0;
+  color: #262626;
+  vertical-align: middle;
+  line-height: 1.5;
+  padding-right: 36px;
+}
+
+select:hover,
+select:active {
+  border: 1px solid #262626;
+}
+
+select:active {
+  border: 1px solid #262626;
+  background-color: $gray-13;
+}
+
+/* Select components */
+.descend {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  margin-top: -12px;
+  pointer-events: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
