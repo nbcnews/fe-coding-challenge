@@ -4,11 +4,11 @@ React Coding Challenge for Front End Developers
 ## Instructions
 You will be creating a custom dropdown component that selects content package types. Given this application framework, please complete the following [workflow](#workflow).
 
-### TODO A
+### [TODO A](https://github.com/nbcnews/fe-coding-challenge/blob/master/src/components/DropdownControl/DropdownControl.js#L26)
 - [ ] The dropdown does not have any options loaded. Use the data array given in `DropdownControl.js` component state to render options values.
 - [ ] Use the `label` parameter for user display and `name` for a unique value identifier.
 
-### TODO B
+### [TODO B](https://github.com/nbcnews/fe-coding-challenge/blob/master/src/components/DropdownControl/DropdownControl.js#L36)
 - [ ] There should be two arrow buttons next to the dropdown that update the current value.
 - [ ] The left arrow should move back which option is selected, and the right arrow should move it forward.
 
