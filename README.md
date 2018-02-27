@@ -1,5 +1,5 @@
-# fe-coding-challenge
-NBC News React Coding Challenge for Front End Developers
+# NBC News Dropdown Control
+React Coding Challenge for Front End Developers
 
 ## Instructions
 You will be creating a custom dropdown component that selects content package types. Given this application framework, please complete the following [workflow](#workflow).
@@ -41,6 +41,6 @@ $ npm start     # Start the development server
 ```
 
 ## Workflow
-![Workflow](https://raw.githubusercontent.com/nbcnews/fe-coding-challenge/workflow.png)
+![Workflow image](workflow.png "User interaction flow for dropdown value selection")
 
 Please don't hesistate to ask if you have any questions. Good luck!
