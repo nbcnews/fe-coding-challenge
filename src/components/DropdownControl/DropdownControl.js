@@ -22,14 +22,22 @@ class DropdownControl extends Component {
       { name: 'video', label: 'Video' },
     ],
     // TODO B: Track current selected option
-    selectedOption: null,
+    selectedOption: null, // default should be twoUp/2-Up
   };
 
   // TODO A: add select options and handle selection
   dropdown = () => {
+    const onChange = (e) => {
+      this.setState({
+        selectedOption: null,
+      });
+    };
+
     return (
       <div className="dropdown position-relative">
-        <select />
+        <select value={null} onChange={onChange}>
+          {/* <option value={null}>{null}</option> */}
+        </select>
         <div className="descend">
           <img className="icon" src={descendIcon} alt="" />
         </div>
@@ -38,18 +46,26 @@ class DropdownControl extends Component {
   };
 
   // TODO C: handle left arrow click to navigate options
+  previous = () => {
+    // previous option
+  };
+
   leftArrow = () => {
     return (
-      <button type="button" className="btn btn-light ml-2">
+      <button type="button" className="btn btn-light ml-2" onClick={this.previous}>
         <img className="icon" src={leftIcon} alt="" />
       </button>
     );
   };
 
   // TODO D: handle right arrow click to navigate options
+  next = () => {
+    // next option
+  };
+
   rightArrow = () => {
     return (
-      <button type="button" className="btn btn-light ml-2">
+      <button type="button" className="btn btn-light ml-2" onClick={this.next}>
         <img className="icon" src={rightIcon} alt="" />
       </button>
     );
