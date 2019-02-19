@@ -21,24 +21,39 @@ class DropdownControl extends Component {
       { name: 'straightUp', label: 'Straight Up' },
       { name: 'video', label: 'Video' },
     ],
+    // TODO B: Track current selected option
+    selectedOption: null,
   };
 
   // TODO A: add select options and handle selection
-  dropdown = () => (
-    <div className="dropdown position-relative">
-      <select />
-      <div className="descend">
-        <img className="icon" src={descendIcon} alt="" />
+  dropdown = () => {
+    return (
+      <div className="dropdown position-relative">
+        <select />
+        <div className="descend">
+          <img className="icon" src={descendIcon} alt="" />
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
-  // TODO B: handle arrow clicks to navigate options
-  arrow = icon => (
-    <button type="button" className="btn btn-light ml-2">
-      <img className="icon" src={icon} alt="" />
-    </button>
-  );
+  // TODO C: handle left arrow click to navigate options
+  leftArrow = () => {
+    return (
+      <button type="button" className="btn btn-light ml-2">
+        <img className="icon" src={leftIcon} alt="" />
+      </button>
+    );
+  };
+
+  // TODO D: handle right arrow click to navigate options
+  rightArrow = () => {
+    return (
+      <button type="button" className="btn btn-light ml-2">
+        <img className="icon" src={rightIcon} alt="" />
+      </button>
+    );
+  };
 
   render() {
     return (
@@ -47,8 +62,8 @@ class DropdownControl extends Component {
           {this.dropdown()}
         </div>
         <div>
-          {this.arrow(leftIcon)}
-          {this.arrow(rightIcon)}
+          {this.leftArrow()}
+          {this.rightArrow()}
         </div>
       </div>
     );
